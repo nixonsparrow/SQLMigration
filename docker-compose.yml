@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  db_mysql:
+    build: ./mysql/
+    restart: always
+    environment:
+      - MYSQL_DATABASE=db_mysql
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - '3306:3306'
+
+  db_postgres:
+    restart: always
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=postgres_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
