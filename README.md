@@ -4,9 +4,9 @@ MySQL -> PostgreSQL
 ## Steps to take:
 
 1. Clone repository:\
-$ git clone git@bitbucket.org:nixonsparrow/sqlmigration.git\
+$ git clone git@github.com:nixonsparrow/SQLMigration.git\
 or\
-$ git clone https://nixonsparrow@bitbucket.org/nixonsparrow/sqlmigration.git
+$ git clone https://github.com/nixonsparrow/SQLMigration.git
 
 2. Create Python 3.11 Virtual Environment:\
 $ sudo apt-get install python-pip\
